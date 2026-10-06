@@ -1,0 +1,249 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: "Instrument Serif", Georgia, serif;
+    --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+    --font-mono: "Space Mono", monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF7EE;
+    color: #24140E;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-mono {
+  font-family: var(--font-mono);
+}
+
+/* Authentic Graph Paper Grid Weave Texture */
+.weave-texture {
+  background-color: #FAF7EE;
+  background-image: 
+    linear-gradient(rgba(36, 20, 14, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(36, 20, 14, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Tactile craft paper background */
+.paper-kraft {
+  background-color: #FFFDF8;
+}
+
+/* Organic hand-drawn squircle borders */
+.handmade-box {
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+}
+
+.handmade-box-alt {
+  border-radius: 20px 255px 15px 245px/255px 15px 245px 15px;
+}
+
+.handmade-squircle {
+  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+}
+
+/* HANDMADE BUTTON STYLES (Physical ink borders, letterpress hard offset shadows) */
+.btn-handmade-dark {
+  background-color: #24140E;
+  color: #FAF7EE;
+  border: 2px solid #24140E;
+  border-radius: 12px 6px 14px 8px;
+  box-shadow: 3.5px 3.5px 0px #9E3F24;
+  font-weight: 600;
+  transition: all 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-handmade-dark:hover {
+  background-color: #381F15;
+  box-shadow: 4px 4px 0px #9E3F24;
+  transform: translate(-1px, -1px);
+}
+.btn-handmade-dark:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #9E3F24;
+}
+
+.btn-handmade-terracotta {
+  background-color: #9E3F24;
+  color: #FAF7EE;
+  border: 2px solid #24140E;
+  border-radius: 14px 8px 12px 10px;
+  box-shadow: 3.5px 3.5px 0px #24140E;
+  font-weight: 600;
+  transition: all 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-handmade-terracotta:hover {
+  background-color: #85311B;
+  box-shadow: 4px 4px 0px #24140E;
+  transform: translate(-1px, -1px);
+}
+.btn-handmade-terracotta:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #24140E;
+}
+
+/* Yellow price tag button matching the ATBP logo tag */
+.btn-handmade-gold {
+  background-color: #FAB900;
+  color: #24140E;
+  border: 2px solid #24140E;
+  border-radius: 8px 14px 6px 12px;
+  box-shadow: 3px 3px 0px #24140E;
+  font-weight: 700;
+  transition: all 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-handmade-gold:hover {
+  background-color: #FFC72C;
+  box-shadow: 3.5px 3.5px 0px #24140E;
+  transform: translate(-1px, -1px);
+}
+.btn-handmade-gold:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #24140E;
+}
+
+.btn-handmade-paper {
+  background-color: #FFFDF8;
+  color: #24140E;
+  border: 2px solid #24140E;
+  border-radius: 10px 14px 8px 12px;
+  box-shadow: 3px 3px 0px #24140E;
+  font-weight: 600;
+  transition: all 120ms cubic-bezier(0.16, 1, 0.3, 1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.btn-handmade-paper:hover {
+  background-color: #F7EFE3;
+  box-shadow: 3.5px 3.5px 0px #24140E;
+  transform: translate(-1px, -1px);
+}
+.btn-handmade-paper:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #24140E;
+}
+
+.btn-handmade-stitch {
+  background-color: #FFFDF8;
+  color: #24140E;
+  border: 2px dashed #24140E;
+  border-radius: 8px;
+  box-shadow: 2px 2px 0px rgba(36, 20, 14, 0.15);
+  font-weight: 600;
+  transition: all 120ms ease;
+  cursor: pointer;
+}
+.btn-handmade-stitch:hover {
+  background-color: #F7EFE3;
+  border-color: #9E3F24;
+}
+
+/* HANDMADE SEARCH LEDGER FRAMES */
+.search-handmade-ledger {
+  background-color: #FFFDF8;
+  border: 2.5px solid #24140E;
+  border-radius: 255px 25px 225px 25px/25px 225px 25px 255px;
+  box-shadow: 4px 4px 0px #24140E;
+  transition: all 150ms ease;
+}
+.search-handmade-ledger:focus-within {
+  box-shadow: 5px 5px 0px #FAB900;
+  border-color: #24140E;
+}
+
+.search-handmade-header {
+  background-color: #FFFDF8;
+  border: 2px solid #24140E;
+  border-radius: 14px 8px 16px 10px;
+  box-shadow: 2.5px 2.5px 0px #24140E;
+  transition: all 150ms ease;
+}
+.search-handmade-header:focus-within {
+  box-shadow: 3.5px 3.5px 0px #FAB900;
+  border-color: #24140E;
+}
+
+/* HANDMADE CARD FRAME */
+.card-handmade {
+  background-color: #FFFDF8;
+  border: 2px solid #24140E;
+  border-radius: 12px 6px 14px 8px;
+  box-shadow: 3.5px 3.5px 0px rgba(36, 20, 14, 0.18);
+  transition: all 160ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+.card-handmade:hover {
+  box-shadow: 5px 5px 0px #24140E;
+  transform: translate(-1px, -2px);
+}
+
+/* Yellow Price Tag matching ATBP logo tag */
+.tag-handmade-yellow {
+  background-color: #FAB900;
+  color: #24140E;
+  border: 1.5px solid #24140E;
+  border-radius: 4px;
+  box-shadow: 2px 2px 0px #24140E;
+  font-family: var(--font-mono);
+  font-weight: 700;
+}
+
+/* Washi Tape Accent */
+.washi-tape-strip {
+  background-color: rgba(228, 207, 172, 0.75);
+  backdrop-filter: blur(1px);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+}
+
+/* Photo Tilt Variations for Handcrafted Collage */
+.tilt-l {
+  transform: rotate(-3deg);
+}
+.tilt-r {
+  transform: rotate(3.5deg);
+}
+.tilt-l-sm {
+  transform: rotate(-1.5deg);
+}
+.tilt-r-sm {
+  transform: rotate(2deg);
+}
+
+.craft-divider {
+  border-bottom: 2px dashed rgba(36, 20, 14, 0.22);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

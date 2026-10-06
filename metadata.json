@@ -1,0 +1,7 @@
+{
+  "name": "ATBP — Curated Filipino Marketplace",
+  "description": "A tactile, human-crafted marketplace for handmade goods, vintage archives, pre-loved fashion, and local garage sales across the Philippines.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
